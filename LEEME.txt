@@ -1,0 +1,17 @@
+CUIDARME - archivos para generar el APK
+
+Contenido:
+  index.html, manifest.json, sw.js, icon-192.png, icon-512.png, icon-maskable-512.png
+
+Pasos (Android):
+ 1. Sube TODOS estos archivos (sueltos, sin la carpeta) a un repositorio de GitHub
+    y activa GitHub Pages (Settings > Pages > Deploy from branch > main / root).
+ 2. Abre la URL publicada (https://TU-USUARIO.github.io/TU-REPO/) y comprueba que carga.
+ 3. Entra en pwabuilder.com, pega esa URL y pulsa Start.
+ 4. Package for stores > Android > descarga el ZIP. Dentro esta el .apk.
+ 5. Guarda el archivo de firma (signing key) que incluye el ZIP: lo necesitaras para actualizar.
+ 6. Instala el .apk en el movil (permite "instalar apps desconocidas").
+
+Para actualizar la app: cambia index.html en GitHub y, si quieres forzar la
+recarga en los dispositivos, cambia el numero de version en sw.js (const C).
+Tus datos viven en el dispositivo: usa Calendario > Copia de seguridad para exportarlos.
